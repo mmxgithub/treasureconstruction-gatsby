@@ -1,6 +1,7 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
+const adapter = require("gatsby-adapter-netlify")
 
 module.exports = {
   siteMetadata: {
@@ -21,4 +22,7 @@ module.exports = {
       },
     },
   ],
+  adapter: adapter({
+    excludeDatastoreFromEngineFunction: false,
+  }),
 };
