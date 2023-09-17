@@ -1,0 +1,5 @@
+.title {
+    font-size: var(--text-title);
+    border-bottom: 1.5px solid currentColor;
+    padding-bottom: var(--space-lg);
+}

@@ -1,0 +1,31 @@
+.article-list {
+  margin: var(--space-3xl) 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--space-3xl);
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover .title {
+  border-bottom-color: var(--primary);
+}
+
+@media (min-width: 1024px) {
+  .article-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.card-item {
+  border: 1.5px solid lightgray;
+  border-radius: 5px;
+  padding: 5px;
+  height: fit-content;
+  
+}

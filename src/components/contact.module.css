@@ -1,0 +1,17 @@
+.title {
+  font-size: var(--text-title);
+  padding-bottom: var(--space-lg);
+}
+.company-name {
+  font-weight: var(--bold);
+  font-size: var(--text-lead);
+}
+.address {
+  font-size: var(--text-lead);
+  margin-bottom: 10px;
+}
+.list-text {
+    font-size: var(--text-lead);
+    margin-left: 5px;
+    color: #0000EE;
+}

@@ -1,0 +1,33 @@
+.article-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: var(--space-3xl);
+}
+
+.title {
+  display: inline-block;
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-xs);
+  margin-top: var(--space-lg);
+  border-bottom: 1.5px solid transparent;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover .title {
+  border-bottom-color: var(--primary);
+}
+
+
+@media (min-width: 1024px) {
+  .article-list {
+    grid-template-columns: none;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+  }
+}

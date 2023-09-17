@@ -1,0 +1,10 @@
+.title {
+  font-size: var(--text-title);
+  border-bottom: 1.5px solid currentColor;
+  padding-bottom: var(--space-lg);
+}
+
+.description {
+  font-size: var(--text-lead);
+  margin-top: var(--space-md);
+}
